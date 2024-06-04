@@ -376,22 +376,21 @@
 
     <section class="section dashboard">
       <div class="row">
-
         <!-- Data Range -->
-        <div class="container mt-3">
-          <div class="row">
+        <div class="container mt-3 mb-3">
+          <div class="row-datarange">
             <div class="col-lg-12">
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Data Range</h5>
 
-                  <!-- Bordered Tabs Data Range-->
+                   <!-- Bordered Tabs Data Range -->
                   <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
                     <li class="nav-item" role="presentation">
                       <button class="nav-link active" id="Today-tab" data-bs-toggle="tab" data-bs-target="#bordered-today" type="button" role="tab" aria-controls="today" aria-selected="true">Today</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="this-week-tab" data-bs-toggle="tab" data-bs-target="#bordered-this-week" type="button" role="tab" aria-controls="this-weel" aria-selected="false">This week</button>
+                      <button class="nav-link" id="this-week-tab" data-bs-toggle="tab" data-bs-target="#bordered-this-week" type="button" role="tab" aria-controls="this-week" aria-selected="false">This week</button>
                     </li>
                     <li class="nav-item" role="presentation">
                       <button class="nav-link" id="this-month-tab" data-bs-toggle="tab" data-bs-target="#bordered-this-month" type="button" role="tab" aria-controls="this-month" aria-selected="false">This month</button>
@@ -403,161 +402,503 @@
                       <button class="nav-link" id="last-year-tab" data-bs-toggle="tab" data-bs-target="#bordered-last-year" type="button" role="tab" aria-controls="last-year" aria-selected="false">Last year</button>
                     </li>
                   </ul>
-                  <!-- today -->
-                  <div class="container-fluid mt-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <div class="tab-content pt-2" id="borderedTabContent">
-                          <div class="tab-pane fade show active" id="bordered-today" role="tabpanel" aria-labelledby="today-tab">
-                              <div class="row">
-                              <!-- total order card -->
-                                <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
-                                  <div class="card info-card orders-card w-100">
-                                    <div class="card-body">
-                                      <div class="d-flex justify-content-between align-items-center">
-                                        <h3 class="card-title mb-0">Total Orders <br><strong>jumlah order</strong> </h3>
-                                          <div class="d-flex justify-content-between align-items-center">
-                                            <div class="ps-2 text-start">
-                                              <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
-                                              <span span style="margin-top: 0;">active <span> | 4 </span></span>
-                                            </div>
-                                          </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              <!-- end total order card -->
-                              
-                              <!-- total courier -->
-                                <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
-                                  <div class="card info-card orders-card w-100">
-                                    <div class="card-body">
-                                      <div class="d-flex justify-content-between align-items-center">
-                                        <h3 class="card-title mb-0">Total Courier <br><strong>jumlah Courier</strong> </h3>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                          <div class="ps-2 text-start">
-                                            <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
-                                            <span span style="margin-top: 0;">active <span> | 4 </span></span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              <!-- end total courier -->
-
-                              <!-- total customer -->
-                                <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
-                                  <div class="card info-card orders-card w-100">
-                                    <div class="card-body">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                      <h3 class="card-title mb-0">Total Courier <br><strong>jumlah Courier</strong> </h3>
-                                      <div class="d-flex justify-content-between align-items-center">
-                                        <div class="ps-2 text-start">
-                                          <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
-                                          <span span style="margin-top: 0;">active <span> | 4 </span></span>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              <!-- end total customer -->
-
-                              <!-- total revenue -->
-                                <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
-                                    <div class="card info-card orders-card w-100">
-                                      <div class="card-body">
-                                      <div class="d-flex justify-content-between align-items-center">
-                                        <h3 class="card-title mb-0">Total Courier <br><strong>jumlah Courier</strong> </h3>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                          <div class="ps-2 text-start">
-                                            <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
-                                            <span span style="margin-top: 0;">active <span> | 4 </span></span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              <!-- total revenue -->
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end today -->
                 </div>
               </div> 
             </div>
           </div> 
         </div>
-        <!-- end data range -->
+        <!-- today  -->
+        <div class="container-fluid">
+          <div class="card-today">
+            <div class="tab-content" id="borderedTabContent">
+              <div class="tab-pane fade show active" id="bordered-today" role="tabpanel" aria-labelledby="today-tab">
+                <div class="row">
+                    <!-- total order card -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                      <div class="card info-card orders-card w-100">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title mb-0">Total Orders <br><strong>jumlah order</strong> </h3>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="ps-2 text-start">
+                                <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
+                                <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end total order card -->
+                              
+                    <!-- total courier -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                      <div class="card info-card orders-card w-100">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title">Total Courier <br><strong>jumlah Courier</strong> </h3>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="ps-1 text-start">
+                                <p class="mb-0">success<span> | 50</span></p>
+                                <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end total courier -->
+
+                    <!-- total customer -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                      <div class="card info-card orders-card w-100">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title">Total Courier <br><strong>jumlah Courier</strong> </h3>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="ps-2 text-start">
+                                <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
+                                <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end total customer -->
+
+                    <!-- total revenue -->
+                      <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                        <div class="card info-card orders-card w-100">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <h3 class="card-title mb-0">Total Courier <br><strong>jumlah Courier</strong> </h3>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="ps-2 text-start">
+                                    <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
+                                    <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  <!-- total revenue -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end today -->
+        <!-- this week -->
+        <div class="container-fluid">
+          <div class="card-today">
+            <div class="tab-content" id="borderedTabContent">
+              <div class="tab-pane fade show" id="bordered-this-week" role="tabpanel" aria-labelledby="this-week-tab">
+                <div class="row">
+                  <!-- total order card -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                      <div class="card info-card orders-card w-100">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title mb-0">Total Orders <br><strong>jumlah order</strong> </h3>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="ps-2 text-start">
+                                  <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
+                                  <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- end total order card -->
+                                                                          
+                  <!-- total courier -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                      <div class="card info-card orders-card w-100">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title">Total Courier <br><strong>jumlah Courier</strong> </h3>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="ps-1 text-start">
+                                  <p class="mb-0">success<span> | 50</span></p>
+                                  <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- end total courier -->
+
+                  <!-- total customer -->
+                  <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                    <div class="card info-card orders-card w-100">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h3 class="card-title">Total Courier <br><strong>jumlah Courier</strong> </h3>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="ps-2 text-start">
+                                <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
+                                <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end total customer -->
+
+                  <!-- total revenue -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                      <div class="card info-card orders-card w-100">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title mb-0">Total Courier <br><strong>jumlah Courier</strong> </h3>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="ps-2 text-start">
+                                <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
+                                <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- total revenue -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end this week -->
+        <!-- this month -->
+        <div class="container-fluid">
+          <div class="card-today">
+            <div class="tab-content" id="borderedTabContent">
+              <div class="tab-pane fade show" id="bordered-this-month" role="tabpanel" aria-labelledby="this-month-tab">
+                <div class="row">
+                  <!-- total order card -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                      <div class="card info-card orders-card w-100">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title mb-0">Total Orders <br><strong>jumlah order</strong> </h3>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="ps-2 text-start">
+                                  <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
+                                  <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- end total order card -->
+                                                                          
+                  <!-- total courier -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                      <div class="card info-card orders-card w-100">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title">Total Courier <br><strong>jumlah Courier</strong> </h3>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="ps-1 text-start">
+                                  <p class="mb-0">success<span> | 50</span></p>
+                                  <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- end total courier -->
+
+                  <!-- total customer -->
+                  <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                    <div class="card info-card orders-card w-100">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h3 class="card-title">Total Courier <br><strong>jumlah Courier</strong> </h3>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="ps-2 text-start">
+                                <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
+                                <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end total customer -->
+
+                  <!-- total revenue -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                      <div class="card info-card orders-card w-100">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title mb-0">Total Courier <br><strong>jumlah Courier</strong> </h3>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="ps-2 text-start">
+                                <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
+                                <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- total revenue -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end thismonth -->
+        <!-- this year -->
+        <div class="container-fluid">
+          <div class="card-today">
+            <div class="tab-content" id="borderedTabContent">
+              <div class="tab-pane fade show" id="bordered-this-year" role="tabpanel" aria-labelledby="this-year-tab">
+                <div class="row">
+                  <!-- total order card -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                      <div class="card info-card orders-card w-100">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title mb-0">Total Orders <br><strong>jumlah order</strong> </h3>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="ps-2 text-start">
+                                  <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
+                                  <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- end total order card -->
+                                                                          
+                  <!-- total courier -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                      <div class="card info-card orders-card w-100">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title">Total Courier <br><strong>jumlah Courier</strong> </h3>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="ps-1 text-start">
+                                  <p class="mb-0">success<span> | 50</span></p>
+                                  <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- end total courier -->
+
+                  <!-- total customer -->
+                  <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                    <div class="card info-card orders-card w-100">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h3 class="card-title">Total Courier <br><strong>jumlah Courier</strong> </h3>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="ps-2 text-start">
+                                <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
+                                <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end total customer -->
+
+                  <!-- total revenue -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                      <div class="card info-card orders-card w-100">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title mb-0">Total Courier <br><strong>jumlah Courier</strong> </h3>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="ps-2 text-start">
+                                <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
+                                <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- total revenue -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end this year -->
+        <!-- last year -->
+        <div class="container-fluid">
+          <div class="card-today">
+            <div class="tab-content" id="borderedTabContent">
+              <div class="tab-pane fade show" id="bordered-last-year" role="tabpanel" aria-labelledby="last-year-tab">
+                <div class="row">
+                  <!-- total order card -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                      <div class="card info-card orders-card w-100">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title mb-0">Total Orders <br><strong>jumlah order</strong> </h3>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="ps-2 text-start">
+                                  <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
+                                  <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- end total order card -->
+                                                                          
+                  <!-- total courier -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                      <div class="card info-card orders-card w-100">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title">Total Courier <br><strong>jumlah Courier</strong> </h3>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="ps-1 text-start">
+                                  <p class="mb-0">success<span> | 50</span></p>
+                                  <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- end total courier -->
+
+                  <!-- total customer -->
+                  <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                    <div class="card info-card orders-card w-100">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h3 class="card-title">Total Courier <br><strong>jumlah Courier</strong> </h3>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="ps-2 text-start">
+                                <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
+                                <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end total customer -->
+
+                  <!-- total revenue -->
+                    <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                      <div class="card info-card orders-card w-100">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title mb-0">Total Courier <br><strong>jumlah Courier</strong> </h3>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="ps-2 text-start">
+                                <p class="mb-0" style="margin-bottom: 0;">success<span> | 50</span></p>
+                                <span span style="margin-top: 0;">active <span> | 4 </span></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- total revenue -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end last year -->
       </div>
-    </section>        
-  
-        <div class="col-lg-12">
-          <div class="row">
+    </section>
+    <!-- end data range -->
+
+    <!-- current order -->
+    <div class="row">
+          <div class="col-lg-12">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Table with hoverable rows</h5>
+                <h5 class="card-title">Current Orders</h5>
 
                 <!-- Table with hoverable rows -->
-                <table class="table table-hover">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Name</th>
-                      <th scope="col">Position</th>
-                      <th scope="col">Age</th>
-                      <th scope="col">Start Date</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Brandon Jacob</td>
-                      <td>Designer</td>
-                      <td>28</td>
-                      <td>2016-05-25</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Bridie Kessler</td>
-                      <td>Developer</td>
-                      <td>35</td>
-                      <td>2014-12-05</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Ashleigh Langosh</td>
-                      <td>Finance</td>
-                      <td>45</td>
-                      <td>2011-08-12</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>Angus Grady</td>
-                      <td>HR</td>
-                      <td>34</td>
-                      <td>2012-06-11</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">5</th>
-                      <td>Raheem Lehner</td>
-                      <td>Dynamic Division Officer</td>
-                      <td>47</td>
-                      <td>2011-04-19</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">NO</th>
+                        <th scope="col">Mecanic Name</th>
+                        <th scope="col">Customer Name</th>
+                        <th scope="col">origin</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Order value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Riski Gemilang</td>
+                        <td>Riski Gemilang </td>
+                        <td>Gajah Mungkur </td>
+                        <td>Tembalang</td>
+                        <td>Rp.8000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
                 <!-- End Table with hoverable rows -->
 
               </div>
             </div>
           </div>
         </div>
+    <!-- end current order -->
+
+    <!-- maps -->
+    <div class="row">
+      <div class="col-lg-12 mt-4 d-flex align-items-stretch">
+          <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">Live Orders</h5>
+            <!-- <div class="ratio ratio-1x1">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d356933.8714888409!2d10.413661869378636!3d45.65994086120074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781eca8aec020b9%3A0x91dcf07c1c969bb8!2sGarda!5e0!3m2!1spl!2spl!4v1672244147501!5m2!1spl!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div> -->
+          </div>
+      </div>
+    </div>
+    <div class="row pe-0 ">
+      <div class="col-md-8 mt-1 pe-0">
+        <div class="card-map">
+          <div class="card-body-maps">
+            <div class="ratio ratio-1x1">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d356933.8714888409!2d10.413661869378636!3d45.65994086120074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781eca8aec020b9%3A0x91dcf07c1c969bb8!2sGarda!5e0!3m2!1spl!2spl!4v1672244147501!5m2!1spl!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="col-md-4 mt-1 px-0">
+        <div class="card-map">
+          <div class="card-body-maps">
+                 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end maps -->
 
   </main><!-- End #main -->
 

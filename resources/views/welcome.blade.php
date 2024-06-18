@@ -311,37 +311,12 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="forms-elements.html">
+            <a href="history">
               <i class="bi bi-circle"></i><span>History</span>
             </a>
           </li>
           <li>
-            <a href="forms-layouts.html">
-              <i class="bi bi-circle"></i><span>Archive</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span>Schedule</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-validation.html">
-              <i class="bi bi-circle"></i><span>Instant</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-validation.html">
-              <i class="bi bi-circle"></i><span>Multi Packet</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-validation.html">
-              <i class="bi bi-circle"></i><span>Sameday</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-validation.html">
+            <a href="rating">
               <i class="bi bi-circle"></i><span>Rating</span>
             </a>
           </li>
@@ -833,22 +808,22 @@
                   <table class="table table-hover">
                     <thead>
                       <tr>
-                        <th scope="col">NO</th>
-                        <th scope="col">Mecanic Name</th>
+                        <th scope="col">No.</th>
+                        <th scope="col">Mechanic Name</th>
                         <th scope="col">Customer Name</th>
-                        <th scope="col">origin</th>
-                        <th scope="col">Destination</th>
+                        <th scope="col">Vehicle Type</th>
+                        <th scope="col">Brand</th>
                         <th scope="col">Order value</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">1</th>
-                        <td>Riski Gemilang</td>
-                        <td>Riski Gemilang </td>
-                        <td>Gajah Mungkur </td>
-                        <td>Tembalang</td>
-                        <td>Rp.8000</td>
+                        <th scope="row">1.</th>
+                        <td>Faisal</td>
+                        <td>Adama</td>
+                        <td>Bike</td>
+                        <td>Kawasaki</td>
+                        <td>Rp500.000,00</td>
                       </tr>
                     </tbody>
                   </table>

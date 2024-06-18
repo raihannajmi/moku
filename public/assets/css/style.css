@@ -15,7 +15,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: #f6f9ff;
+  background: #D8DDE5;
   color: #444444;
 }
 
@@ -156,7 +156,7 @@ h6 {
     content: "";
     width: 13px;
     height: 13px;
-    background: #fff;
+    background: #ffffff;
     position: absolute;
     top: -7px;
     right: 20px;
@@ -218,13 +218,34 @@ h6 {
 
 /* Card */
 .card {
-  margin-bottom: 30px;
   border: none;
   border-radius: 5px;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  box-shadow: 0px 0 10px rgba(87, 134, 215, 0.1);
   width: 100%; /* Menggunakan lebar 100% agar kartu-kartu responsif */
 }
 
+.card-today {
+  border: none;
+  border-radius: 1px;
+  box-shadow: 0px 0 10px rgba(87, 134, 215, 0.1);
+  width: 100%; /* Menggunakan lebar 100% agar kartu-kartu responsif */
+}
+
+.card-thisweek {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0 10px rgba(87, 134, 215, 0.1);
+  width: 100%; /* Menggunakan lebar 100% agar kartu-kartu responsif */
+}
+
+
+.card-map {
+  border: none;
+  border-radius: 1px;
+  background-color: #fff;
+  /* box-shadow: 0px 0 10px rgba(87, 134, 215, 0.1); */
+  width: 100%; /* Menggunakan lebar 100% agar kartu-kartu responsif */
+}
 
 .card-header,
 .card-footer {
@@ -249,7 +270,12 @@ h6 {
 }
 
 .card-body {
-  padding: 0 20px 20px 20px;
+  padding:  0px 20px 20px 20px;
+  width: 100%;
+}
+
+.card-body-maps {
+  padding:  20px 20px 20px 20px;
   width: 100%;
 }
 
@@ -334,11 +360,11 @@ h6 {
 
 /* Bordered Tabs */
 .nav-tabs-bordered {
-  border-bottom: 2px solid #ebeef4;
+  border-bottom: 2px solid #ffffff;
 }
 
 .nav-tabs-bordered .nav-link {
-  margin-bottom: -2px;
+  margin-bottom: -10px;
   border: none;
   color: #2c384e;
 }
@@ -778,6 +804,7 @@ h6 {
   font-size: 16px;
 }
 
+
 .dashboard .filter .icon:hover,
 .dashboard .filter .icon:focus {
   color: #4154f1;
@@ -802,6 +829,12 @@ h6 {
 }
 
 /* Info Cards */
+
+/* .row-today {
+  padding-right: 10px;
+  padding-left: ;
+} */
+
 .dashboard .info-card {
   padding-bottom: 10px;
 }

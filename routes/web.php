@@ -18,3 +18,7 @@ Route::get('/rating', function () {
     return view('rating');
 });
 
+Route::get('/contact', function () {
+    return view('contact');
+});
+

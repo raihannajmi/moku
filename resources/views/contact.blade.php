@@ -333,65 +333,94 @@
   </aside> <!-- End Sidebar -->
 
   <main id="main" class="main">
-
-    <div class="pagetitle">
-      <h1>History</h1>
+  <div class="pagetitle">
+      <h1>Contact</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Orders</a></li>
-          <li class="breadcrumb-item active">History</li>
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item">Pages</li>
+          <li class="breadcrumb-item active">Contact</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
-    <section class="section dashboard">
-    <!-- current order -->
-    <div class="row">
-          <div class="col-lg-12">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">History</h5>
+    <section class="section contact">
 
-                <!-- Table with hoverable rows -->
-                <div class="table-responsive">
-                  <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th scope="col">No.</th>
-                        <th scope="col">Mecanic Name</th>
-                        <th scope="col">Customer Name</th>
-                        <th scope="col">Vehicle Type</th>
-                        <th scope="col">Brand</th>
-                        <th scope="col">Order value</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1.</th>
-                        <td>Riski</td>
-                        <td>Pro</td>
-                        <td>Car</td>
-                        <td>Mitsubishi</td>
-                        <td>Rp1.200.000,00</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2.</th>
-                        <td>Faisal</td>
-                        <td>Adama</td>
-                        <td>Bike</td>
-                        <td>Kawasaki</td>
-                        <td>Rp500.000,00</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <!-- End Table with hoverable rows -->
+      <div class="row gy-4">
 
+        <div class="col-xl-6">
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="info-box card">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Address</h3>
+                <p>Gunungpati, <br>Semarang</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="info-box card">
+                <i class="bi bi-telephone"></i>
+                <h3>Call Us</h3>
+                <p>+62 0895 1300 3587<br>+62 0892 1444 2567</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="info-box card">
+                <i class="bi bi-envelope"></i>
+                <h3>Email Us</h3>
+                <p>info@example.com<br>contact@example.com</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="info-box card">
+                <i class="bi bi-clock"></i>
+                <h3>Open Hours</h3>
+                <p>Monday - Friday<br>9:00AM - 10:00PM</p>
               </div>
             </div>
           </div>
+
         </div>
-    <!-- end current order -->
+
+        <div class="col-xl-6">
+          <div class="card p-4">
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->

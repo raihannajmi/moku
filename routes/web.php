@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LeapYearController;
+use App\Http\Controllers\DateController;
+
 
 Route::get('/', function () {
     return view('login');
@@ -20,5 +22,10 @@ Route::get('/rating', function () {
 });
 
 
-Route::get('/', [LeapYearController::class, 'index']);
+Route::get('/year', [LeapYearController::class, 'index']);
 Route::post('/calculate', [LeapYearController::class, 'calculate'])->name('calculate');
+Route::get('/find-dates', function () {
+    return view('date_form');
+});
+
+Route::post('/show-dates', [DateController::class, 'showDates'])->name('showDates');

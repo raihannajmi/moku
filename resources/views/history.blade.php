@@ -324,7 +324,7 @@
       </li><!-- End orders Nav -->
 
       <li class="nav-item">
-      <a class="nav-link collapsed" href="contact">
+      <a class="nav-link collapsed" href="users-profile.html">
           <i class="bi bi-person"></i>
           <span>Contacts</span>
         </a>

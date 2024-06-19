@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PrimeController;
 use App\Http\Controllers\LeapYearController;
 use App\Http\Controllers\DateController;
 
@@ -21,6 +22,9 @@ Route::get('/rating', function () {
     return view('rating');
 });
 
+Route::get('/prime-form', [PrimeController::class, 'index']);
+
+Route::post('/primes', [PrimeController::class, 'showPrimes'])->name('show.primes');
 
 Route::get('/year', [LeapYearController::class, 'index']);
 Route::post('/calculate', [LeapYearController::class, 'calculate'])->name('calculate');
